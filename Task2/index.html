@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intermediate HTML, CSS, JS Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h1>Intermediate HTML, CSS, JS</h1>
+    <ul>
+      <li><a href="#contact">Contact Form</a></li>
+      <li><a href="#layout">Responsive Layout</a></li>
+      <li><a href="#todo">To-Do List</a></li>
+    </ul>
+  </nav>
+
+  <section id="contact">
+    <h2>Contact Form</h2>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label>Message:</label>
+        <textarea id="message" rows="4" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="layout">
+    <h2>Responsive Layout (Flexbox + Grid)</h2>
+    <div class="container">
+      <div class="box">
+        <h3>Welcome</h3>
+        <p>This layout uses CSS Grid for content and Flexbox for navigation.</p>
+      </div>
+      <div class="box">
+        <h3>Sidebar</h3>
+        <p>This sidebar moves below the content on smaller screens.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="todo"> 
+  <h2>Dynamic To-Do List</h2>
+  <div class="todo-container">
+    <div class="input-row">
+      <input type="text" id="taskInput" placeholder="Add new task">
+      <button id="addBtn">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
