@@ -79,7 +79,7 @@ document.getElementById("placeOrder").addEventListener("click", () => {
     alert(`✅Order placed! Total amount: ₹${total}`);
 
     setTimeout(() => {
-      alert("🍽️Order ready for pick up!");
+      alert("🍽️Hurray!! Order ready for pick up!");
     }, 3500);
 
     total = 0;
@@ -90,3 +90,4 @@ document.getElementById("placeOrder").addEventListener("click", () => {
 });
 
 renderMenu();
+
